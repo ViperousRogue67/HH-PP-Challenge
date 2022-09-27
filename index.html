@@ -6,10 +6,69 @@
 	<title>Vernon v. Keira</title>
 </head>
 <style>
-	
+	body {
+		background-image: url("challenge.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	p {
+		font-family: Segoe UI;
+		font-size: 48px;
+		color: white;
+	}
+.center {
+	 padding: 300px 0;
+	text-align: center;
+}
+
+}
 </style>
-<body>
-	<center>
-	<p>soon</p>
+<body>	
+		<div class="center">
+		<p style="font-size: 21px;">Might not be current results</p>
+		<p id="demo"></p>
+		<p id="status">Vernon: 348 | Keira: 622</p>
+		<p id ="Diff"></p>
+	</div>
 </body>
+<script>
+var vernon = 348;
+var keira = 622;
+var difference;
+difference = keira - vernon;
+var text = "Difference: " + difference;
+var overalltext = "Vernon: " + vernon +  " | Keira: " + keira;
+document.getElementById("Diff").innerHTML = text;
+document.getElementById("status").innerHTML = overalltext;
+var countDownDate = new Date("Oct 13, 2022 18:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Challenge Over";
+  }
+}, 1000);
+</script>
+
 </html>
