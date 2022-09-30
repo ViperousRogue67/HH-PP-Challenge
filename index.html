@@ -18,14 +18,19 @@
 		color: white;
 	}
 .center {
-	 padding: 300px 0;
+	 padding: 200px 0;
 	text-align: center;
 }
+	h1 {
+		font-family: Segoe UI;
+		color: white;
+	}
 
 }
 </style>
 <body>	
 		<div class="center">
+			<h1>A rework is currently in progress! Expect inaccurate pp values</h1>
 		<p style="font-size: 21px;">Vernon has</p>
 		<p id="demo" style="font-size:80px; font-family: Arial;"></p>
 		<p style="font-size: 21px;">to outrank Keira</p>
@@ -36,12 +41,12 @@
 	</div>
 </body>
 <script>
-var vernon = 356;
-var keira = 622;
+var vernon = 330;
+var keira = 554;
 var difference;
 difference = keira - vernon;
 var text = "Difference: " + difference;
-var overalltext = "Vernon: " + vernon +  " | Keira: " + keira;
+var overalltext = "Vernon: " + vernon +  "(356) | Keira: " + keira + "(622)";
 document.getElementById("Diff").innerHTML = text;
 document.getElementById("status").innerHTML = overalltext;
 var countDownDate = new Date("Oct 13, 2022 18:00:00").getTime();
