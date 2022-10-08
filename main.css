@@ -1,0 +1,20 @@
+body {
+		background-image: url("challenge.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+p {
+		font-family: Segoe UI;
+		font-size: 48px;
+		color: white;
+	}
+.center {
+	 padding: 200px 0;
+	text-align: center;
+}
+h1 {
+		font-family: Segoe UI;
+		color: white;
+	}
+
