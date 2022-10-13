@@ -30,14 +30,14 @@
 </style>
 <body>	
 		<div class="center">
-			<h1>The Final Stretch</h1>
-		<p style="font-size: 21px;">Vernon has</p>
+			<h1>The Challenge has Concluded!</h1>
+		<p style="font-size: 21px;">Vernon had</p>
 		<p id="demo" style="font-size:80px; font-family: Arial;"></p>
-		<p style="font-size: 21px;">to outrank Keira</p>
+		<p style="font-size: 21px;">to outrank Keira<br>Unfortunately he has lost!</p>
+		<h1>Final Results:</h1>
 		<p id="status"></p>
 		<p id ="Diff"></p>
-		<a href="rules.html" style="font-family: Segoe UI; color: white; font-size: 12px;">Rules for the Challenge</a>
-		<p style="font-size: 12px;">Current Results may be different than Actual Results</p>
+		<p style="font-size: 12px;">Results reflect the pp values when the Challenge had ended</p>
 	</div>
 </body>
 <script>
@@ -45,8 +45,8 @@ var vernon = 488;
 var keira = 685;
 var difference;
 difference = keira - vernon;
-var text = "Difference: " + difference;
-var overalltext = "Vernon: " + vernon +  " | Keira: " + keira;
+var text = "Difference: " + difference + "pp";
+var overalltext = "Vernon: " + vernon +  "pp | Keira: " + keira + "pp";
 document.getElementById("Diff").innerHTML = text;
 document.getElementById("status").innerHTML = overalltext;
 var countDownDate = new Date("Oct 13, 2022 18:00:00").getTime();
@@ -73,9 +73,9 @@ var x = setInterval(function() {
 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "No more time!";
+    document.getElementById("demo").innerHTML = "2 Months!";
   }
 }, 1000);
-</script>
+</script> 
 
 </html>
